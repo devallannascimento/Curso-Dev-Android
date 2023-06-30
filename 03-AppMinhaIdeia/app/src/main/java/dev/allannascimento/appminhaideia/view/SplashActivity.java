@@ -1,4 +1,4 @@
-package dev.allannascimento.appminhaideia;
+package dev.allannascimento.appminhaideia.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+
+import dev.allannascimento.appminhaideia.R;
 
 public class SplashActivity extends AppCompatActivity {
 
