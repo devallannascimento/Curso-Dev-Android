@@ -1,13 +1,15 @@
 package dev.allannacimento.appminhaideiadb.controller;
 
-public interface ICrud<C> {
+import java.util.List;
 
-    public void incluir();
+public interface ICrud<T> {
 
-    public void alterar();
+    public boolean incluir(T obj);
 
-    public void deletar();
+    public boolean alterar(T obj);
 
-    public void listar();
+    public boolean deletar(int id);
+
+    public List<T> listar();
 
 }

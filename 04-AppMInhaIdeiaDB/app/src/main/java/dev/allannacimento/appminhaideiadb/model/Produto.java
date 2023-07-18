@@ -1,11 +1,8 @@
 package dev.allannacimento.appminhaideiadb.model;
 
-import android.util.Log;
+public class Produto {
 
-import dev.allannacimento.appminhaideiadb.api.AppUtil;
-import dev.allannacimento.appminhaideiadb.controller.ICrud;
-
-public class Produto implements ICrud{
+    private int id;
 
     private String produto;
     private String fornecador;
@@ -26,25 +23,11 @@ public class Produto implements ICrud{
         this.fornecador = fornecador;
     }
 
-    @Override
-    public void incluir() {
-        Log.i(AppUtil.TAG, "incluir: Produto");
+    public int getId() {
+        return id;
     }
 
-    @Override
-    public void alterar() {
-
-    }
-
-    @Override
-    public void deletar() {
-
-        Log.i(AppUtil.TAG, "deletar: ");
-
-    }
-
-    @Override
-    public void listar() {
-        Log.i(AppUtil.TAG,"listar: Produtos");
+    public void setId(int id) {
+        this.id = id;
     }
 }
